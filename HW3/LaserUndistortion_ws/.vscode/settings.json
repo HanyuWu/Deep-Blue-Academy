@@ -1,0 +1,7 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/han/mygit/DeepBlueAcademy/HW3/LaserUndistortion_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "cmake.sourceDirectory": "${workspaceFolder}/src"
+}
