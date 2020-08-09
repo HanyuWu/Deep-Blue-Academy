@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("champion_nav_msgs/src/champion_nav_msgs")
 subdirs("imlsMatcher")
+subdirs("imlsMatcher_csm")

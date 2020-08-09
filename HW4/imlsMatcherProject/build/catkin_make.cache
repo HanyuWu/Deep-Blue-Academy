@@ -1,2 +1,2 @@
-champion_nav_msgs/src/champion_nav_msgs:imlsMatcher
+champion_nav_msgs/src/champion_nav_msgs:imlsMatcher:imlsMatcher_csm
 -DCATKIN_DEVEL_PREFIX=/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/devel -DCMAKE_INSTALL_PREFIX=/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/install -G Unix Makefiles

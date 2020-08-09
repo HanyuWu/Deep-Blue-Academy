@@ -772,6 +772,12 @@ imlsMatcher_BINARY_DIR:STATIC=/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherPro
 //Value Computed by CMake
 imlsMatcher_SOURCE_DIR:STATIC=/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/src/imlsMatcher
 
+//Value Computed by CMake
+imlsMatcher_csm_BINARY_DIR:STATIC=/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/imlsMatcher_csm
+
+//Value Computed by CMake
+imlsMatcher_csm_SOURCE_DIR:STATIC=/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/src/imlsMatcher_csm
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libtopic_tools.so
 
@@ -1040,7 +1046,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

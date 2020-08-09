@@ -206,18 +206,6 @@ bool IMLSICPMatcher::ImplicitMLSFunction(Eigen::Vector2d x,
 
     //TODO
     //根据函数进行投影．计算height，即ppt中的I(x)
-
-    Eigen::Vector2d v;
-    double w, w_sum = 0, sum = 0;
-    for (size_t i = 0; i < nearPoints.size(); i++) {
-        v = x - nearPoints[i];
-        w = exp(-((v[0] * v[0] + v[1] * v[1])) / (m_h * m_h));
-        w_sum += w;
-        sum += w * v.dot(nearNormals[i]);
-    }
-    height = sum / w_sum;
-
-    /*
     double weight(0.0);
     double weight_sum(0.0);
     height = 0;
@@ -229,8 +217,6 @@ bool IMLSICPMatcher::ImplicitMLSFunction(Eigen::Vector2d x,
         weight_sum += weight;
     }
     height /= weight_sum;
-    */
-
     //end of TODO
 
     return true;
@@ -462,7 +448,6 @@ Eigen::Vector2d IMLSICPMatcher::ComputeNormal(std::vector<Eigen::Vector2d> &near
 
     //TODO
     //根据周围的激光点计算法向量，参考ppt中NICP计算法向量的方法
-    /*
     Eigen::Vector2d ave_pos(0,0);
     for (auto &i: nearPoints){
         ave_pos += i; 
@@ -484,27 +469,6 @@ Eigen::Vector2d IMLSICPMatcher::ComputeNormal(std::vector<Eigen::Vector2d> &near
 
     int index = dia_mat(0,0) > dia_mat(1,1)? 1 : 0;  // Normal vectrol corresponds to the least eigen value
     normal = vec_mat.col(index);
-    */
-
-    Eigen::Vector2d center(0, 0);
-    for (size_t i = 0; i < nearPoints.size(); i++) {
-        center = center + nearPoints[i];
-    }
-    center = center / nearPoints.size();
-    Eigen::Matrix2d m;
-    for (size_t i = 0; i < nearPoints.size(); i++) {
-        m = m + (nearPoints[i] - center) * (nearPoints[i] - center).transpose();
-    }
-    m = m / nearPoints.size();
-    // A = V * D * VT.
-    Eigen::EigenSolver<Eigen::Matrix2d> es(m);
-    Eigen::Matrix2d D = es.pseudoEigenvalueMatrix();
-    Eigen::Matrix2d V = es.pseudoEigenvectors();
-    if (D(0, 0) > D(1, 1)) {
-        normal = V.col(1);
-    } else {
-        normal = V.col(0);
-    }
     
     //end of TODO
 

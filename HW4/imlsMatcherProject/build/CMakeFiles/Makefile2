@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build
 all: gtest/all
 all: champion_nav_msgs/src/champion_nav_msgs/all
 all: imlsMatcher/all
+all: imlsMatcher_csm/all
 
 .PHONY : all
 
@@ -80,6 +81,7 @@ all: imlsMatcher/all
 preinstall: gtest/preinstall
 preinstall: champion_nav_msgs/src/champion_nav_msgs/preinstall
 preinstall: imlsMatcher/preinstall
+preinstall: imlsMatcher_csm/preinstall
 
 .PHONY : preinstall
 
@@ -92,6 +94,7 @@ clean: CMakeFiles/doxygen.dir/clean
 clean: gtest/clean
 clean: champion_nav_msgs/src/champion_nav_msgs/clean
 clean: imlsMatcher/clean
+clean: imlsMatcher_csm/clean
 
 .PHONY : clean
 
@@ -259,6 +262,24 @@ imlsMatcher/clean: imlsMatcher/CMakeFiles/rosgraph_msgs_generate_messages_cpp.di
 imlsMatcher/clean: imlsMatcher/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
 
 .PHONY : imlsMatcher/clean
+
+#=============================================================================
+# Directory level rules for directory imlsMatcher_csm
+
+# Recursive "all" directory target.
+imlsMatcher_csm/all: imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/all
+
+.PHONY : imlsMatcher_csm/all
+
+# Recursive "preinstall" directory target.
+imlsMatcher_csm/preinstall:
+
+.PHONY : imlsMatcher_csm/preinstall
+
+# Recursive "clean" directory target.
+imlsMatcher_csm/clean: imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/clean
+
+.PHONY : imlsMatcher_csm/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tests.dir
@@ -1690,7 +1711,7 @@ imlsMatcher/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
 imlsMatcher/CMakeFiles/imlsMatcher_node.dir/all:
 	$(MAKE) -f imlsMatcher/CMakeFiles/imlsMatcher_node.dir/build.make imlsMatcher/CMakeFiles/imlsMatcher_node.dir/depend
 	$(MAKE) -f imlsMatcher/CMakeFiles/imlsMatcher_node.dir/build.make imlsMatcher/CMakeFiles/imlsMatcher_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/CMakeFiles --progress-num=19,20,21 "Built target imlsMatcher_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/CMakeFiles --progress-num=22,23,24 "Built target imlsMatcher_node"
 .PHONY : imlsMatcher/CMakeFiles/imlsMatcher_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2519,6 +2540,33 @@ topic_tools_generate_messages_cpp: imlsMatcher/CMakeFiles/topic_tools_generate_m
 imlsMatcher/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean:
 	$(MAKE) -f imlsMatcher/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make imlsMatcher/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
 .PHONY : imlsMatcher/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir
+
+# All Build rule for target.
+imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/all:
+	$(MAKE) -f imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/build.make imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/depend
+	$(MAKE) -f imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/build.make imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/CMakeFiles --progress-num=19,20,21 "Built target imlsMatcher_csm_node"
+.PHONY : imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/all
+
+# Build rule for subdir invocation for target.
+imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/CMakeFiles 0
+.PHONY : imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/rule
+
+# Convenience name for target.
+imlsMatcher_csm_node: imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/rule
+
+.PHONY : imlsMatcher_csm_node
+
+# clean rule for target.
+imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/clean:
+	$(MAKE) -f imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/build.make imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/clean
+.PHONY : imlsMatcher_csm/CMakeFiles/imlsMatcher_csm_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

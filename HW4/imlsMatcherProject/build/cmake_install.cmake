@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/gtest/cmake_install.cmake")
   include("/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/champion_nav_msgs/src/champion_nav_msgs/cmake_install.cmake")
   include("/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/imlsMatcher/cmake_install.cmake")
+  include("/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/build/imlsMatcher_csm/cmake_install.cmake")
 
 endif()
 
