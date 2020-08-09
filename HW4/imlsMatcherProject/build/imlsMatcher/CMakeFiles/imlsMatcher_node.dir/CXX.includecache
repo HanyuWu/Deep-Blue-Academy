@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/src/imlsMatcher/include/imlsMatcher/imls_icp.h
+iostream
+-
+vector
+-
+set
+-
+nabo/nabo.h
+-
+eigen3/Eigen/Core
+-
+eigen3/Eigen/Geometry
+-
+eigen3/Eigen/Eigenvalues
+-
+eigen3/unsupported/Eigen/Polynomials
+-
+pcl-1.8/pcl/visualization/cloud_viewer.h
+-
+pcl-1.8/pcl/point_cloud.h
+-
+pcl-1.8/pcl/point_types.h
+-
+sys/time.h
+-
+
+/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/src/imlsMatcher/src/imls_icp.cpp
+imls_icp.h
+/home/han/mygit/DeepBlueAcademy/HW4/imlsMatcherProject/src/imlsMatcher/src/imls_icp.h
+
