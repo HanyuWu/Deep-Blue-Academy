@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "files.associations": {
+        "cstdlib": "cpp",
+        "*.tcc": "cpp",
+        "chrono": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp",
+        "numeric": "cpp",
+        "ratio": "cpp",
+        "cinttypes": "cpp",
+        "core": "cpp"
+    }
+}

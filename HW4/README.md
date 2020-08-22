@@ -1,3 +1,23 @@
+<p style="text-align:center; font-size:25px">
+    README
+<p>
+
+1. catkin_make之后，在不同终端分别运行 roscore; rviz; 
+2. 本次作业有两个代码需要实行,完成操作一后，在另一终端输入下面指令并回车，即可在rviz中观察IMLS-ICP的匹配情况;
+```bash
+rosrun imlsMatcher imlsMatcher_node
+```
+3. 完成操作一后，在另一终端输入下面指令并回车，即可在rviz中观察CSM库下PL-ICP的匹配情况;
+```bash
+rosrun imlsMatcher_csm imlsMatcher_csm_node
+```
+
+<br>
+
+<p style="text-align:center; font-size:25px">
+    REPORT
+<p>
+
 **1. 补充代码,实现两帧间的 IMLS-ICP 激光匹配;** <br>   
    
 <p style="text-align:center">

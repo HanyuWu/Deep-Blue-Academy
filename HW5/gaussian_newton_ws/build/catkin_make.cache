@@ -1,0 +1,2 @@
+gaussian_newton_scanmatcher
+-DCATKIN_DEVEL_PREFIX=/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/devel -DCMAKE_INSTALL_PREFIX=/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/install -G Unix Makefiles

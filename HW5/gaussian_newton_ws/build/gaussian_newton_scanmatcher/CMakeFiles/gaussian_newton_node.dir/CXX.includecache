@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/src/gaussian_newton_scanmatcher/include/gaussian_newton_method.h
+cstdio
+-
+vector
+-
+cmath
+-
+iostream
+-
+map.h
+/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/src/gaussian_newton_scanmatcher/include/map.h
+eigen3/Eigen/Core
+/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/src/gaussian_newton_scanmatcher/include/eigen3/Eigen/Core
+eigen3/Eigen/Dense
+/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/src/gaussian_newton_scanmatcher/include/eigen3/Eigen/Dense
+
+/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/src/gaussian_newton_scanmatcher/include/map.h
+stdint.h
+-
+
+/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/src/gaussian_newton_scanmatcher/src/gaussian_newton_method.cpp
+map.h
+/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/src/gaussian_newton_scanmatcher/src/map.h
+gaussian_newton_method.h
+/home/han/mygit/DeepBlueAcademy/HW5/gaussian_newton_ws/src/gaussian_newton_scanmatcher/src/gaussian_newton_method.h
+
